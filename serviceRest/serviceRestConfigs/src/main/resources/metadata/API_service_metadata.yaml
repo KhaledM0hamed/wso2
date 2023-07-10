@@ -1,0 +1,11 @@
+---
+key: "API_service-1.0.0"
+name : "API_service"
+displayName : "API_service"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/service"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

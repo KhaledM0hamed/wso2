@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/service" name="API_service" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/get?id={id}">
+        <inSequence>
+            <call>
+                <endpoint key="getService"/>
+            </call>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/create">
+        <inSequence>
+            <call>
+                <endpoint key="createService"/>
+            </call>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
